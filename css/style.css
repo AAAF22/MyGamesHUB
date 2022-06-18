@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+.box{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(45deg,#F38FFA,#539EEE);
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    margin: 0;
+    font-family: 'Koulen', cursive;
+    background-image:linear-gradient(45deg,#F38FFA,#539EEE);
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 20vh;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 64px;
+    transform: translateY(-50%);
+}
+@keyframes fly{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(75%);
+    }
+}
+span{
+    animation: fly 2s infinite alternate-reverse; 
+    display: inline-block;
+}
+.my{
+    animation-delay: 0s;
+}
+.games{
+    animation-delay: 0.5s;
+}
+.hub{
+    animation-delay: 1s;
+}
+.box a{
+    background-image:linear-gradient(45deg,#08e634,#5fe4ab,rgb(152, 230, 164));
+    padding: 8px 64px;
+    font-size: 48px;
+    color: whitesmoke;
+    text-decoration: none;
+    border: solid 1px rgb(255, 255, 255);
+    transition: 0.4s;
+}
+.box a:hover{
+    box-shadow: 0 0 20px white;
+    border-radius: 10px;
+}
+nav{
+    background-color:black;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 10;
+}
+nav a{
+    color: azure;
+    text-decoration: none;
+    margin: 0 32px;
+    font-family: 'Russo One', sans-serif;
+    display: inline-block;
+    transition: 0.4s;
+}
+nav a:hover{
+    transform: scale(1.5);
+    text-shadow: 0 0 5px white;
+}
+.game-item {
+    min-width: 280px;
+    width: 22%;
+    height: 350px;
+    background-color: aliceblue;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position:  center;
+    border-style: none;
+    background-size: cover;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: 0.4s;
+    margin: 10px;
+    min-width: 280px;
+}
+.game-item:hover{
+    opacity: 1;
+}
+.one{
+    background-image: url(../img/кал\ оф\ дьюти\ мобайал\ гуд.jpeg);
+}
+.two{
+    background-image: url(../img/фортинааайтииии.jpeg);
+}
+.three{
+    background-image: url(../img/CS-GO.PNG);
+}
+.four{
+    background-image: url(../img/MCraft.PNG);
+}
+.five{
+    background-image: url(../img/АМОГУС.jpeg);
+}
+.six{
+    background-image: url(../img/gta.jpeg);
+}
+.seven{
+    background-image: url(../img/pvz.jpeg);
+}
+.game-item a{
+    color: aliceblue;
+    background-color: rgb(236, 172, 52);
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 8px 32px;
+    display: inline-block;
+    position: relative;
+    top: 275px;
+    width: 90%;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+.game-item a:hover{
+    background-color: white;
+    color: rgb(236, 172, 52);
+    transform: scale(110%);
+    transition: 0.4s;
+}
